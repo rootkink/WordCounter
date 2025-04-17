@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="index.js" defer></script>
+</head>
+<body>
+   <div class="main h-screen flex flex-col bg-neutral-900 text-neutral-50 p-4 gap-2">
+        <div class="header flex gap-4 p-4 border-1 border-neutral-700 rounded-[.5rem]">
+        <div class="flex gap-1">
+            <h1 class="text-xl">Words</h1>
+            <h1 id="word-count" class="text-xl">0</h1>
+        </div>
+        <div class="flex gap-1">
+            <h1 class="text-xl">Characters</h1>
+            <h1 id="char-count"  class="text-xl">0</h1>
+        </div>
+        </div>
+        <div class="grow">
+        <textarea id="text-box" class="h-full w-full border-1 border-neutral-700 focus:outline-none focus:border-neutral-500 rounded-[.5rem] resize-none p-3"></textarea>
+        </div>
+   </div>
+</body>
+</html>
